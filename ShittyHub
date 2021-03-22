@@ -115,7 +115,7 @@ GuiName.BorderSizePixel = 0
 GuiName.Position = UDim2.new(0.0465116277, 0, 0.400000006, 0)
 GuiName.Size = UDim2.new(0, 53, 0, 24)
 GuiName.Font = Enum.Font.GothamBold
-GuiName.Text = "Kierf's Gui"
+GuiName.Text = "Shitty Hub"
 GuiName.TextColor3 = Color3.fromRGB(85, 255, 255)
 GuiName.TextSize = 14.000
 
