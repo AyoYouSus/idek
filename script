@@ -1,0 +1,512 @@
+-- Kierf's GUI UPDATED OMLLLL
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local scripts = Instance.new("TextButton")
+local creditsbutton = Instance.new("TextButton")
+local destroy = Instance.new("TextButton")
+local title = Instance.new("Frame")
+local CreatorName = Instance.new("TextLabel")
+local GuiName = Instance.new("TextLabel")
+local rainbow = Instance.new("Frame")
+local scriptlist = Instance.new("ScrollingFrame")
+local admin = Instance.new("TextButton")
+local ragdoll = Instance.new("TextButton")
+local freeanim = Instance.new("TextButton")
+local freeemote = Instance.new("TextButton")
+local dahood = Instance.new("TextButton")
+local credits = Instance.new("Frame")
+local names = Instance.new("Frame")
+local uicreator = Instance.new("Frame")
+local name = Instance.new("TextLabel")
+local namee = Instance.new("TextLabel")
+local scripting = Instance.new("Frame")
+local name_2 = Instance.new("TextLabel")
+local namee_2 = Instance.new("TextLabel")
+local dc = Instance.new("Frame")
+local dctitle = Instance.new("Frame")
+local dctitletext = Instance.new("TextLabel")
+local dcname = Instance.new("Frame")
+local dcnametext = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.685088217, 0, 0.482026845, 0)
+main.Size = UDim2.new(0, 388, 0, 345)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+scripts.Name = "scripts"
+scripts.Parent = main
+scripts.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+scripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
+scripts.Position = UDim2.new(0.0410000533, 0, 0.159999996, 0)
+scripts.Size = UDim2.new(0, 90, 0, 19)
+scripts.Font = Enum.Font.GothamBold
+scripts.Text = "Scripts"
+scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+scripts.TextSize = 14.000
+scripts.MouseButton1Down:connect(function()
+scriptlist.Visible = true
+credits.Visible = false
+end)
+
+creditsbutton.Name = "creditsbutton"
+creditsbutton.Parent = main
+creditsbutton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+creditsbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+creditsbutton.Position = UDim2.new(0.0410000533, 0, 0.246956527, 0)
+creditsbutton.Size = UDim2.new(0, 90, 0, 19)
+creditsbutton.Font = Enum.Font.GothamBold
+creditsbutton.Text = "Credits"
+creditsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+creditsbutton.TextSize = 14.000
+creditsbutton.MouseButton1Down:connect(function()
+credits.Visible = true
+scriptlist.Visible = false
+end)
+
+destroy.Name = "destroy"
+destroy.Parent = main
+destroy.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+destroy.BorderColor3 = Color3.fromRGB(255, 255, 255)
+destroy.Position = UDim2.new(0.0410000533, 0, 0.333913058, 0)
+destroy.Size = UDim2.new(0, 90, 0, 19)
+destroy.Font = Enum.Font.GothamBold
+destroy.Text = "Destroy"
+destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+destroy.TextSize = 14.000
+destroy.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = false
+end)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 387, 0, 40)
+
+CreatorName.Name = "CreatorName"
+CreatorName.Parent = title
+CreatorName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreatorName.BackgroundTransparency = 1.000
+CreatorName.BorderSizePixel = 0
+CreatorName.Position = UDim2.new(0.0206718352, 0, 0, 0)
+CreatorName.Size = UDim2.new(0, 63, 0, 22)
+CreatorName.Font = Enum.Font.GothamBold
+CreatorName.Text = "Kierf--"
+CreatorName.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreatorName.TextSize = 20.000
+
+GuiName.Name = "GuiName"
+GuiName.Parent = title
+GuiName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiName.BackgroundTransparency = 1.000
+GuiName.BorderSizePixel = 0
+GuiName.Position = UDim2.new(0.0465116277, 0, 0.400000006, 0)
+GuiName.Size = UDim2.new(0, 53, 0, 24)
+GuiName.Font = Enum.Font.GothamBold
+GuiName.Text = "Kierf's Gui"
+GuiName.TextColor3 = Color3.fromRGB(85, 255, 255)
+GuiName.TextSize = 14.000
+
+rainbow.Name = "rainbow"
+rainbow.Parent = title
+rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rainbow.Position = UDim2.new(0.00300002773, 0, 1, 0)
+rainbow.Size = UDim2.new(0, 385, 0, 2)
+
+scriptlist.Name = "scriptlist"
+scriptlist.Parent = main
+scriptlist.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+scriptlist.BorderColor3 = Color3.fromRGB(255, 255, 255)
+scriptlist.Position = UDim2.new(0.371134013, 0, 0.159999996, 0)
+scriptlist.Size = UDim2.new(0, 219, 0, 264)
+scriptlist.Visible = false
+
+admin.Name = "admin"
+admin.Parent = scriptlist
+admin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+admin.BackgroundTransparency = 0.600
+admin.BorderColor3 = Color3.fromRGB(255, 255, 255)
+admin.Position = UDim2.new(0.0365296789, 0, 0.0261416472, 0)
+admin.Size = UDim2.new(0, 185, 0, 20)
+admin.Font = Enum.Font.GothamBold
+admin.Text = "Admin (Infinite Yield)"
+admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+admin.TextSize = 15.000
+admin.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+ragdoll.Name = "ragdoll"
+ragdoll.Parent = scriptlist
+ragdoll.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ragdoll.BackgroundTransparency = 0.600
+ragdoll.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ragdoll.Position = UDim2.new(0.0410000011, 0, 0.0703623146, 0)
+ragdoll.Size = UDim2.new(0, 185, 0, 20)
+ragdoll.Font = Enum.Font.GothamBold
+ragdoll.Text = "Ragdoll (Vynixius)"
+ragdoll.TextColor3 = Color3.fromRGB(255, 255, 255)
+ragdoll.TextSize = 15.000
+ragdoll.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine"))()
+end)
+
+freeanim.Name = "freeanim"
+freeanim.Parent = scriptlist
+freeanim.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+freeanim.BackgroundTransparency = 0.600
+freeanim.BorderColor3 = Color3.fromRGB(255, 255, 255)
+freeanim.Position = UDim2.new(0.0410000011, 0, 0.113318831, 0)
+freeanim.Size = UDim2.new(0, 185, 0, 20)
+freeanim.Font = Enum.Font.GothamBold
+freeanim.Text = "Free Animation"
+freeanim.TextColor3 = Color3.fromRGB(255, 255, 255)
+freeanim.TextSize = 15.000
+freeanim.MouseButton1Down:connect(function()
+	--(Kierf's Animation Changer)
+	local ScreenGui = Instance.new("ScreenGui")
+	local main = Instance.new("Frame")
+	local title = Instance.new("TextLabel")
+	local oldschool = Instance.new("TextButton")
+	local kierfsfavanim = Instance.new("TextButton")
+	local close = Instance.new("TextButton")
+	local custom = Instance.new("TextButton")
+	local openmain = Instance.new("Frame")
+	local open = Instance.new("TextButton")
+	local Animate = game.Players.LocalPlayer.Character.Animate
+
+	ScreenGui.Parent = game.CoreGui
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	main.Name = "main"
+	main.Parent = ScreenGui
+	main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+	main.BorderSizePixel = 0
+	main.Position = UDim2.new(0.399282098, 0, 0.344900161, 0)
+	main.Size = UDim2.new(0, 329, 0, 200)
+	main.Visible = false
+	main.Active = true
+	main.Draggable = true
+
+	title.Name = "title"
+	title.Parent = main
+	title.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	title.BorderSizePixel = 0
+	title.Size = UDim2.new(0, 299, 0, 38)
+	title.Font = Enum.Font.GothamBold
+	title.Text = "Kierf's Animation Changer"
+	title.TextColor3 = Color3.fromRGB(208, 208, 208)
+	title.TextSize = 20.000
+	title.TextWrapped = true
+
+	oldschool.Name = "oldschool"
+	oldschool.Parent = main
+	oldschool.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+	oldschool.BorderSizePixel = 0
+	oldschool.Position = UDim2.new(0.135039508, 0, 0.296000004, 0)
+	oldschool.Size = UDim2.new(0, 100, 0, 37)
+	oldschool.Font = Enum.Font.GothamBlack
+	oldschool.Text = "Old School"
+	oldschool.TextColor3 = Color3.fromRGB(0, 0, 0)
+	oldschool.TextSize = 16.000
+	oldschool.MouseButton1Down:connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=5319831086"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=5319847204"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=5319844329"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	kierfsfavanim.Name = "kierfsfavanim"
+	kierfsfavanim.Parent = main
+	kierfsfavanim.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+	kierfsfavanim.BorderSizePixel = 0
+	kierfsfavanim.Position = UDim2.new(0.561999977, 0, 0.300999999, 0)
+	kierfsfavanim.Size = UDim2.new(0, 100, 0, 36)
+	kierfsfavanim.Font = Enum.Font.GothamBlack
+	kierfsfavanim.Text = "Kierf's Fav Anim"
+	kierfsfavanim.TextColor3 = Color3.fromRGB(0, 0, 0)
+	kierfsfavanim.TextSize = 12.000
+	kierfsfavanim.TextWrapped = true
+	kierfsfavanim.MouseButton1Down:connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	close.Name = "close"
+	close.Parent = main
+	close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	close.BorderSizePixel = 0
+	close.Position = UDim2.new(0.854103267, 0, 0, 0)
+	close.Size = UDim2.new(0, 48, 0, 38)
+	close.Font = Enum.Font.GothamBlack
+	close.Text = "x"
+	close.TextColor3 = Color3.fromRGB(0, 0, 0)
+	close.TextSize = 40.000
+	close.TextWrapped = true
+	close.MouseButton1Down:connect(function()
+		main.Visible = false
+		openmain.Visible = true
+	end)
+
+	custom.Name = "custom"
+	custom.Parent = main
+	custom.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+	custom.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	custom.BorderSizePixel = 0
+	custom.Position = UDim2.new(0.258358657, 0, 0.59484303, 0)
+	custom.Size = UDim2.new(0, 159, 0, 50)
+	custom.Font = Enum.Font.GothamBlack
+	custom.Text = "Custom Anim"
+	custom.TextColor3 = Color3.fromRGB(0, 0, 0)
+	custom.TextSize = 20.000
+	custom.MouseButton1Down:connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=" --(Put IdleAnim1 Anim ID)
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=" --(Put IdleAnim2 Anim ID)
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Walk Anim ID)
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Run Anim ID)
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Jump Anim ID)
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Climb Anim ID)
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Fall Anim ID)
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	openmain.Name = "openmain"
+	openmain.Parent = ScreenGui
+	openmain.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+	openmain.Position = UDim2.new(0.0183823537, 0, 0.404026836, 0)
+	openmain.Size = UDim2.new(0, 100, 0, 30)
+	openmain.Active = true
+	openmain.Draggable = true
+
+	open.Name = "open"
+	open.Parent = openmain
+	open.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+	open.BorderSizePixel = 0
+	open.Size = UDim2.new(0, 100, 0, 30)
+	open.Font = Enum.Font.GothamBlack
+	open.Text = "Open"
+	open.TextColor3 = Color3.fromRGB(0, 0, 0)
+	open.TextSize = 18.000
+	open.MouseButton1Down:connect(function()
+		openmain.Visible = false
+		main.Visible = true
+	end)
+end)
+
+freeemote.Name = "freeemote"
+freeemote.Parent = scriptlist
+freeemote.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+freeemote.BackgroundTransparency = 0.600
+freeemote.BorderColor3 = Color3.fromRGB(255, 255, 255)
+freeemote.Position = UDim2.new(0.0364337899, 0, 0.15437682, 0)
+freeemote.Size = UDim2.new(0, 185, 0, 20)
+freeemote.Font = Enum.Font.GothamBold
+freeemote.Text = "Free Emote"
+freeemote.TextColor3 = Color3.fromRGB(255, 255, 255)
+freeemote.TextSize = 15.000
+freeemote.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DjsEQMxQ"))()
+end)
+
+dahood.Name = "dahood"
+dahood.Parent = scriptlist
+dahood.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+dahood.BackgroundTransparency = 0.600
+dahood.BorderColor3 = Color3.fromRGB(255, 255, 255)
+dahood.Position = UDim2.new(0.0410000011, 0, 0.200835675, 0)
+dahood.Size = UDim2.new(0, 185, 0, 20)
+dahood.Font = Enum.Font.GothamBold
+dahood.Text = "Da Hood (Trust Boy)"
+dahood.TextColor3 = Color3.fromRGB(255, 255, 255)
+dahood.TextSize = 15.000
+dahood.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/XXAWmifh'))()
+end)
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+credits.BorderColor3 = Color3.fromRGB(255, 255, 255)
+credits.Position = UDim2.new(0.370999992, 0, 0.159999996, 0)
+credits.Size = UDim2.new(0, 219, 0, 264)
+credits.Visible = false
+
+names.Name = "names"
+names.Parent = credits
+names.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+names.BorderColor3 = Color3.fromRGB(255, 255, 255)
+names.Position = UDim2.new(0.0639269426, 0, 0.071969755, 0)
+names.Size = UDim2.new(0, 190, 0, 80)
+
+uicreator.Name = "uicreator"
+uicreator.Parent = names
+uicreator.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+uicreator.BorderColor3 = Color3.fromRGB(255, 255, 255)
+uicreator.Position = UDim2.new(0.0631578937, 0, 0.137500003, 0)
+uicreator.Size = UDim2.new(0, 166, 0, 19)
+
+name.Name = "name"
+name.Parent = uicreator
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.BorderColor3 = Color3.fromRGB(27, 42, 53)
+name.BorderSizePixel = 0
+name.Position = UDim2.new(0.680722892, 0, 0, 0)
+name.Size = UDim2.new(0, 53, 0, 19)
+name.Font = Enum.Font.GothamBold
+name.Text = "Kierf--"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextSize = 14.000
+
+namee.Name = "namee"
+namee.Parent = uicreator
+namee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+namee.BackgroundTransparency = 1.000
+namee.BorderColor3 = Color3.fromRGB(27, 42, 53)
+namee.BorderSizePixel = 0
+namee.Position = UDim2.new(0.0662650615, 0, 0, 0)
+namee.Size = UDim2.new(0, 53, 0, 19)
+namee.Font = Enum.Font.GothamBold
+namee.Text = "Custom UI"
+namee.TextColor3 = Color3.fromRGB(255, 255, 255)
+namee.TextSize = 14.000
+
+scripting.Name = "scripting"
+scripting.Parent = names
+scripting.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+scripting.BorderColor3 = Color3.fromRGB(255, 255, 255)
+scripting.Position = UDim2.new(0.0631578937, 0, 0.512499988, 0)
+scripting.Size = UDim2.new(0, 166, 0, 19)
+
+name_2.Name = "name"
+name_2.Parent = scripting
+name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name_2.BackgroundTransparency = 1.000
+name_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+name_2.BorderSizePixel = 0
+name_2.Position = UDim2.new(0.680722892, 0, 0, 0)
+name_2.Size = UDim2.new(0, 53, 0, 19)
+name_2.Font = Enum.Font.GothamBold
+name_2.Text = "Kierf--"
+name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+name_2.TextSize = 14.000
+
+namee_2.Name = "namee"
+namee_2.Parent = scripting
+namee_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+namee_2.BackgroundTransparency = 1.000
+namee_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+namee_2.BorderSizePixel = 0
+namee_2.Position = UDim2.new(0.0662650615, 0, 0, 0)
+namee_2.Size = UDim2.new(0, 53, 0, 19)
+namee_2.Font = Enum.Font.GothamBold
+namee_2.Text = "Scripting"
+namee_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+namee_2.TextSize = 14.000
+
+dc.Name = "dc"
+dc.Parent = credits
+dc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+dc.BorderColor3 = Color3.fromRGB(255, 255, 255)
+dc.Position = UDim2.new(0.0639269426, 0, 0.431818247, 0)
+dc.Size = UDim2.new(0, 190, 0, 80)
+
+dctitle.Name = "dctitle"
+dctitle.Parent = dc
+dctitle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+dctitle.BorderColor3 = Color3.fromRGB(255, 255, 255)
+dctitle.Position = UDim2.new(0.0631578937, 0, 0.137500003, 0)
+dctitle.Size = UDim2.new(0, 166, 0, 19)
+
+dctitletext.Name = "dctitletext"
+dctitletext.Parent = dctitle
+dctitletext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dctitletext.BackgroundTransparency = 1.000
+dctitletext.BorderColor3 = Color3.fromRGB(27, 42, 53)
+dctitletext.BorderSizePixel = 0
+dctitletext.Position = UDim2.new(0.343373507, 0, 0, 0)
+dctitletext.Size = UDim2.new(0, 53, 0, 19)
+dctitletext.Font = Enum.Font.GothamBold
+dctitletext.Text = "Discord"
+dctitletext.TextColor3 = Color3.fromRGB(255, 255, 255)
+dctitletext.TextSize = 14.000
+
+dcname.Name = "dcname"
+dcname.Parent = dc
+dcname.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+dcname.BorderColor3 = Color3.fromRGB(255, 255, 255)
+dcname.Position = UDim2.new(0.0631578937, 0, 0.512499988, 0)
+dcname.Size = UDim2.new(0, 166, 0, 19)
+
+dcnametext.Name = "dcnametext"
+dcnametext.Parent = dcname
+dcnametext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dcnametext.BackgroundTransparency = 1.000
+dcnametext.BorderColor3 = Color3.fromRGB(27, 42, 53)
+dcnametext.BorderSizePixel = 0
+dcnametext.Position = UDim2.new(0.343373507, 0, 0, 0)
+dcnametext.Size = UDim2.new(0, 53, 0, 19)
+dcnametext.Font = Enum.Font.GothamBold
+dcnametext.Text = "Kierf--#3585"
+dcnametext.TextColor3 = Color3.fromRGB(255, 255, 255)
+dcnametext.TextSize = 14.000
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.894329906, 0, 0.00869565178, 0)
+close.Size = UDim2.new(0, 39, 0, 34)
+close.Font = Enum.Font.GothamBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 25.000
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.BackgroundTransparency = 1.000
+openmain.Position = UDim2.new(0.00882352982, 0, 0.471140951, 0)
+openmain.Size = UDim2.new(0, 65, 0, 20)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+open.Size = UDim2.new(0, 65, 0, 19)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 14.000
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
