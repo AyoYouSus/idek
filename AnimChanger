@@ -1,0 +1,235 @@
+--Kieee.#1674
+local MainGui = Instance.new("ScreenGui")
+local TopFrame = Instance.new("Frame")
+local rainbow = Instance.new("Frame")
+local AnimLabel = Instance.new("TextLabel")
+local MainFrame = Instance.new("Frame")
+local OldSchool = Instance.new("TextButton")
+local KierfsAnim = Instance.new("TextButton")
+local KierfsAnim2 = Instance.new("TextButton")
+local LukesAnim = Instance.new("TextButton")
+local ChangerLabel = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+local OpenButton = Instance.new("TextButton")
+local DestroyButton = Instance.new("TextButton")
+local Animate = game.Players.LocalPlayer.Character.Animate
+
+MainGui.Name = "MainGui"
+MainGui.Parent = game.CoreGui
+MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = MainGui
+TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame.BorderSizePixel = 0
+TopFrame.Position = UDim2.new(0.360000014, 0, 0.333000004, 0)
+TopFrame.Size = UDim2.new(0, 380, 0, 40)
+TopFrame.Active = true
+TopFrame.Draggable = true
+
+rainbow.Name = "rainbow"
+rainbow.Parent = TopFrame
+rainbow.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+rainbow.BorderSizePixel = 0
+rainbow.Position = UDim2.new(0, 0, 0.995062232, 0)
+rainbow.Size = UDim2.new(0, 380, 0, 4)
+
+AnimLabel.Name = "AnimLabel"
+AnimLabel.Parent = TopFrame
+AnimLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimLabel.BackgroundTransparency = 1.000
+AnimLabel.BorderSizePixel = 0
+AnimLabel.Position = UDim2.new(0.00789473671, 0, 0.183333188, 0)
+AnimLabel.Size = UDim2.new(0, 76, 0, 16)
+AnimLabel.Font = Enum.Font.GothamBold
+AnimLabel.Text = "Animation"
+AnimLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+AnimLabel.TextSize = 12.000
+AnimLabel.TextStrokeColor3 = Color3.fromRGB(47, 47, 47)
+AnimLabel.TextStrokeTransparency = 0.000
+AnimLabel.TextWrapped = true
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TopFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0, 0, 1.07500005, 0)
+MainFrame.Size = UDim2.new(0, 380, 0, 310)
+
+OldSchool.Name = "OldSchool"
+OldSchool.Parent = MainFrame
+OldSchool.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+OldSchool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OldSchool.BorderSizePixel = 5
+OldSchool.Position = UDim2.new(0.0394736826, 0, 0.0580645166, 0)
+OldSchool.Size = UDim2.new(0, 102, 0, 30)
+OldSchool.Visible = true
+OldSchool.Font = Enum.Font.GothamBlack
+OldSchool.Text = "Old School"
+OldSchool.TextColor3 = Color3.fromRGB(255, 255, 255)
+OldSchool.TextSize = 14.000
+OldSchool.MouseButton1Down:connect(function()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=5319831086"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=5319847204"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=5319844329"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+KierfsAnim.Name = "KierfsAnim"
+KierfsAnim.Parent = MainFrame
+KierfsAnim.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+KierfsAnim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KierfsAnim.BorderSizePixel = 5
+KierfsAnim.Position = UDim2.new(0.365789473, 0, 0.0580645166, 0)
+KierfsAnim.Size = UDim2.new(0, 102, 0, 30)
+KierfsAnim.Visible = true
+KierfsAnim.Font = Enum.Font.GothamBlack
+KierfsAnim.Text = "Kierf's Fav.1"
+KierfsAnim.TextColor3 = Color3.fromRGB(255, 255, 255)
+KierfsAnim.TextSize = 14.000
+KierfsAnim.MouseButton1Down:connect(function()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+KierfsAnim2.Name = "KierfsAnim2"
+KierfsAnim2.Parent = MainFrame
+KierfsAnim2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+KierfsAnim2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KierfsAnim2.BorderSizePixel = 5
+KierfsAnim2.Position = UDim2.new(0.692105234, 0, 0.0580645166, 0)
+KierfsAnim2.Size = UDim2.new(0, 102, 0, 30)
+KierfsAnim2.Visible = true
+KierfsAnim2.Font = Enum.Font.GothamBlack
+KierfsAnim2.Text = "Kierf's Fav.1"
+KierfsAnim2.TextColor3 = Color3.fromRGB(255, 255, 255)
+KierfsAnim2.TextSize = 14.000
+KierfsAnim2.MouseButton1Down:connect(function()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498" --(Put IdleAnim1 Anim ID)
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736" --(Put IdleAnim2 Anim ID)
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032" --(Put Walk Anim ID)
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682" --(Put Run Anim ID)
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878" --(Put Jump Anim ID)
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606" --(Put Climb Anim ID)
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942" --(Put Fall Anim ID)
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+LukesAnim.Name = "LukesAnim"
+LukesAnim.Parent = MainFrame
+LukesAnim.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+LukesAnim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LukesAnim.BorderSizePixel = 5
+LukesAnim.Position = UDim2.new(0.365789473, 0, 0.22580646, 0)
+LukesAnim.Size = UDim2.new(0, 102, 0, 30)
+LukesAnim.Font = Enum.Font.GothamBlack
+LukesAnim.Text = "Luke's Fav.1"
+LukesAnim.TextColor3 = Color3.fromRGB(255, 255, 255)
+LukesAnim.TextSize = 14.000
+LukesAnim.MouseButton1Down:connect(function()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=4417977954" --(Put IdleAnim1 Anim ID)
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=4417978624" --(Put IdleAnim2 Anim ID)
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=3303162967" --(Put Walk Anim ID)
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=3236836670" --(Put Run Anim ID)
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878" --(Put Jump Anim ID)
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889" --(Put Climb Anim ID)
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151" --(Put Fall Anim ID)
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+ChangerLabel.Name = "ChangerLabel"
+ChangerLabel.Parent = TopFrame
+ChangerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangerLabel.BackgroundTransparency = 1.000
+ChangerLabel.BorderSizePixel = 0
+ChangerLabel.Position = UDim2.new(0, 0, 0.48300001, 0)
+ChangerLabel.Size = UDim2.new(0, 82, 0, 16)
+ChangerLabel.Font = Enum.Font.GothamBold
+ChangerLabel.Text = "Changer"
+ChangerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangerLabel.TextSize = 18.000
+ChangerLabel.TextStrokeColor3 = Color3.fromRGB(47, 47, 47)
+ChangerLabel.TextStrokeTransparency = 0.000
+ChangerLabel.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = TopFrame
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.899999917, 0, 0.0500000007, 0)
+CloseButton.Size = UDim2.new(0, 37, 0, 37)
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+CloseButton.MouseButton1Down:Connect(function()
+	KierfsAnim.Visible = false
+	KierfsAnim2.Visible = false
+	OldSchool.Visible = false
+    LukesAnim.Visible = false
+	CloseButton.Visible = false
+	DestroyButton.Visible = false
+	wait(.4)
+	MainFrame:TweenSize(UDim2.new(0, 380,0, 0))
+	wait(.8)
+	TopFrame:TweenPosition(UDim2.new(0.36, 0,1.333, 0))
+	OpenButton:TweenPosition(UDim2.new(0.012, 0,0.941, 0))
+end)
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = MainGui
+OpenButton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenButton.BorderSizePixel = 5
+OpenButton.Position = UDim2.new(0.0120000001, 0, 1.940999985, 0)
+OpenButton.Size = UDim2.new(0, 32, 0, 29)
+OpenButton.Font = Enum.Font.GothamBold
+OpenButton.Text = "O"
+OpenButton.TextColor3 = Color3.fromRGB(170, 170, 0)
+OpenButton.TextSize = 25.000
+OpenButton.TextWrapped = true
+OpenButton.MouseButton1Down:Connect(function()
+	TopFrame:TweenPosition(UDim2.new(0.36, 0,0.333, 0))
+	wait(.8)
+	MainFrame:TweenSize(UDim2.new(0, 380,0, 310))
+	wait(1.6)
+	KierfsAnim.Visible = true
+	KierfsAnim2.Visible = true
+	OldSchool.Visible = true
+	CloseButton.Visible = true
+	DestroyButton.Visible = true
+    LukesAnim.Visible = true
+	OpenButton:TweenPosition(UDim2.new(0.012, 0,1.941, 0))
+end)
+
+DestroyButton.Name = "DestroyButton"
+DestroyButton.Parent = TopFrame
+DestroyButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+DestroyButton.BorderSizePixel = 0
+DestroyButton.Position = UDim2.new(0.725, 0, 0.214, 0)
+DestroyButton.Size = UDim2.new(0, 59, 0, 23)
+DestroyButton.Font = Enum.Font.GothamBlack
+DestroyButton.Text = "Destroy"
+DestroyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyButton.TextSize = 14.000
+DestroyButton.MouseButton1Down:Connect(function()
+	TopFrame.Visible = false
+	TopFrame.Active = false
+	OpenButton.Visible = false
+	OpenButton.Active = false
+	DestroyButton.Visible = false
+	DestroyButton.Active = false
+end)
