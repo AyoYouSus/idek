@@ -175,85 +175,8 @@ freeanim.Text = "Free Animation"
 freeanim.TextColor3 = Color3.fromRGB(255, 255, 255)
 freeanim.TextSize = 15.000
 freeanim.MouseButton1Down:connect(function()
-	--(Kierf's Animation Changer)
-	local ScreenGui = Instance.new("ScreenGui")
-	local main = Instance.new("Frame")
-	local title = Instance.new("TextLabel")
-	local oldschool = Instance.new("TextButton")
-	local kierfsfavanim = Instance.new("TextButton")
-	local close = Instance.new("TextButton")
-	local custom = Instance.new("TextButton")
-	local openmain = Instance.new("Frame")
-	local open = Instance.new("TextButton")
-	local Animate = game.Players.LocalPlayer.Character.Animate
-
-	ScreenGui.Parent = game.CoreGui
-	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-	main.Name = "main"
-	main.Parent = ScreenGui
-	main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
-	main.BorderSizePixel = 0
-	main.Position = UDim2.new(0.399282098, 0, 0.344900161, 0)
-	main.Size = UDim2.new(0, 329, 0, 200)
-	main.Visible = false
-	main.Active = true
-	main.Draggable = true
-
-	title.Name = "title"
-	title.Parent = main
-	title.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-	title.BorderSizePixel = 0
-	title.Size = UDim2.new(0, 299, 0, 38)
-	title.Font = Enum.Font.GothamBold
-	title.Text = "Kierf's Animation Changer"
-	title.TextColor3 = Color3.fromRGB(208, 208, 208)
-	title.TextSize = 20.000
-	title.TextWrapped = true
-
-	oldschool.Name = "oldschool"
-	oldschool.Parent = main
-	oldschool.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-	oldschool.BorderSizePixel = 0
-	oldschool.Position = UDim2.new(0.135039508, 0, 0.296000004, 0)
-	oldschool.Size = UDim2.new(0, 100, 0, 37)
-	oldschool.Font = Enum.Font.GothamBlack
-	oldschool.Text = "Old School"
-	oldschool.TextColor3 = Color3.fromRGB(0, 0, 0)
-	oldschool.TextSize = 16.000
-	oldschool.MouseButton1Down:connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=5319831086"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=5319847204"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=5319844329"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	kierfsfavanim.Name = "kierfsfavanim"
-	kierfsfavanim.Parent = main
-	kierfsfavanim.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-	kierfsfavanim.BorderSizePixel = 0
-	kierfsfavanim.Position = UDim2.new(0.561999977, 0, 0.300999999, 0)
-	kierfsfavanim.Size = UDim2.new(0, 100, 0, 36)
-	kierfsfavanim.Font = Enum.Font.GothamBlack
-	kierfsfavanim.Text = "Kierf's Fav Anim"
-	kierfsfavanim.TextColor3 = Color3.fromRGB(0, 0, 0)
-	kierfsfavanim.TextSize = 12.000
-	kierfsfavanim.TextWrapped = true
-	kierfsfavanim.MouseButton1Down:connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AyoYouSus/idek/9cff37024afdcf95a3d5fee862bfe7812e37afc2/AnimChanger'))()
+end)
 	close.Name = "close"
 	close.Parent = main
 	close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
