@@ -177,66 +177,6 @@ freeanim.TextSize = 15.000
 freeanim.MouseButton1Down:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AyoYouSus/idek/9cff37024afdcf95a3d5fee862bfe7812e37afc2/AnimChanger'))()
 end)
-	close.Name = "close"
-	close.Parent = main
-	close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-	close.BorderSizePixel = 0
-	close.Position = UDim2.new(0.854103267, 0, 0, 0)
-	close.Size = UDim2.new(0, 48, 0, 38)
-	close.Font = Enum.Font.GothamBlack
-	close.Text = "x"
-	close.TextColor3 = Color3.fromRGB(0, 0, 0)
-	close.TextSize = 40.000
-	close.TextWrapped = true
-	close.MouseButton1Down:connect(function()
-		main.Visible = false
-		openmain.Visible = true
-	end)
-
-	custom.Name = "custom"
-	custom.Parent = main
-	custom.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-	custom.BorderColor3 = Color3.fromRGB(27, 42, 53)
-	custom.BorderSizePixel = 0
-	custom.Position = UDim2.new(0.258358657, 0, 0.59484303, 0)
-	custom.Size = UDim2.new(0, 159, 0, 50)
-	custom.Font = Enum.Font.GothamBlack
-	custom.Text = "Custom Anim"
-	custom.TextColor3 = Color3.fromRGB(0, 0, 0)
-	custom.TextSize = 20.000
-	custom.MouseButton1Down:connect(function()
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=" --(Put IdleAnim1 Anim ID)
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=" --(Put IdleAnim2 Anim ID)
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Walk Anim ID)
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Run Anim ID)
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Jump Anim ID)
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Climb Anim ID)
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=" --(Put Fall Anim ID)
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
-	end)
-
-	openmain.Name = "openmain"
-	openmain.Parent = ScreenGui
-	openmain.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-	openmain.Position = UDim2.new(0.0183823537, 0, 0.404026836, 0)
-	openmain.Size = UDim2.new(0, 100, 0, 30)
-	openmain.Active = true
-	openmain.Draggable = true
-
-	open.Name = "open"
-	open.Parent = openmain
-	open.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-	open.BorderSizePixel = 0
-	open.Size = UDim2.new(0, 100, 0, 30)
-	open.Font = Enum.Font.GothamBlack
-	open.Text = "Open"
-	open.TextColor3 = Color3.fromRGB(0, 0, 0)
-	open.TextSize = 18.000
-	open.MouseButton1Down:connect(function()
-		openmain.Visible = false
-		main.Visible = true
-	end)
-end)
 
 freeemote.Name = "freeemote"
 freeemote.Parent = scriptlist
