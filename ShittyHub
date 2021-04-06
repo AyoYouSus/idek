@@ -1,375 +1,414 @@
--- Kierf's GUI UPDATED OMLLLL
+--Kieee.#1674
 local ScreenGui = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
-local scripts = Instance.new("TextButton")
-local creditsbutton = Instance.new("TextButton")
-local destroy = Instance.new("TextButton")
-local title = Instance.new("Frame")
-local CreatorName = Instance.new("TextLabel")
-local GuiName = Instance.new("TextLabel")
+local TopFrame = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local ScriptFrame = Instance.new("ScrollingFrame")
+local AdminScript = Instance.new("TextButton")
+local RagdollScript = Instance.new("TextButton")
+local AnimScript = Instance.new("TextButton")
+local EmoteScript = Instance.new("TextButton")
+local ScriptButton = Instance.new("TextButton")
+local DestroyButton = Instance.new("TextButton")
+local TrollButton = Instance.new("TextButton")
+local TrollFrame = Instance.new("Frame")
+local uno = Instance.new("TextLabel")
+local dos = Instance.new("TextLabel")
+local tres = Instance.new("TextLabel")
 local rainbow = Instance.new("Frame")
-local scriptlist = Instance.new("ScrollingFrame")
-local admin = Instance.new("TextButton")
-local ragdoll = Instance.new("TextButton")
-local freeanim = Instance.new("TextButton")
-local freeemote = Instance.new("TextButton")
-local dahood = Instance.new("TextButton")
-local credits = Instance.new("Frame")
-local names = Instance.new("Frame")
-local uicreator = Instance.new("Frame")
 local name = Instance.new("TextLabel")
-local namee = Instance.new("TextLabel")
-local scripting = Instance.new("Frame")
-local name_2 = Instance.new("TextLabel")
-local namee_2 = Instance.new("TextLabel")
-local dc = Instance.new("Frame")
-local dctitle = Instance.new("Frame")
-local dctitletext = Instance.new("TextLabel")
-local dcname = Instance.new("Frame")
-local dcnametext = Instance.new("TextLabel")
-local close = Instance.new("TextButton")
-local openmain = Instance.new("Frame")
-local open = Instance.new("TextButton")
+local hub = Instance.new("TextLabel")
+local close = Instance.new("ImageButton")
+local open = Instance.new("ImageButton")
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-main.Name = "main"
-main.Parent = ScreenGui
-main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-main.BorderSizePixel = 0
-main.Position = UDim2.new(0.685088217, 0, 0.482026845, 0)
-main.Size = UDim2.new(0, 388, 0, 345)
-main.Visible = false
-main.Active = true
-main.Draggable = true
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = ScreenGui
+TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame.BorderSizePixel = 0
+TopFrame.Position = UDim2.new(0.724021971, 0, 0.486381769, 0)
+TopFrame.Size = UDim2.new(0, 350, 0, 40)
+TopFrame.Active = true
+TopFrame.Draggable = true
 
-scripts.Name = "scripts"
-scripts.Parent = main
-scripts.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-scripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
-scripts.Position = UDim2.new(0.0410000533, 0, 0.159999996, 0)
-scripts.Size = UDim2.new(0, 90, 0, 19)
-scripts.Font = Enum.Font.GothamBold
-scripts.Text = "Scripts"
-scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
-scripts.TextSize = 14.000
-scripts.MouseButton1Down:connect(function()
-scriptlist.Visible = true
-credits.Visible = false
-end)
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TopFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0, 0, 1, 0)
+MainFrame.Size = UDim2.new(0, 350, 0, 325)
 
-creditsbutton.Name = "creditsbutton"
-creditsbutton.Parent = main
-creditsbutton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-creditsbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-creditsbutton.Position = UDim2.new(0.0410000533, 0, 0.246956527, 0)
-creditsbutton.Size = UDim2.new(0, 90, 0, 19)
-creditsbutton.Font = Enum.Font.GothamBold
-creditsbutton.Text = "Credits"
-creditsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-creditsbutton.TextSize = 14.000
-creditsbutton.MouseButton1Down:connect(function()
-credits.Visible = true
-scriptlist.Visible = false
-end)
+ScriptFrame.Name = "ScriptFrame"
+ScriptFrame.Parent = MainFrame
+ScriptFrame.Active = true
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ScriptFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptFrame.BorderSizePixel = 3
+ScriptFrame.Position = UDim2.new(0.308571428, 0, 0.0769230798, 0)
+ScriptFrame.Size = UDim2.new(0, 235, 0, 275)
 
-destroy.Name = "destroy"
-destroy.Parent = main
-destroy.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-destroy.BorderColor3 = Color3.fromRGB(255, 255, 255)
-destroy.Position = UDim2.new(0.0410000533, 0, 0.333913058, 0)
-destroy.Size = UDim2.new(0, 90, 0, 19)
-destroy.Font = Enum.Font.GothamBold
-destroy.Text = "Destroy"
-destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
-destroy.TextSize = 14.000
-destroy.MouseButton1Down:connect(function()
-main.Visible = false
-openmain.Visible = false
-end)
-
-title.Name = "title"
-title.Parent = main
-title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-title.BorderSizePixel = 0
-title.Size = UDim2.new(0, 387, 0, 40)
-
-CreatorName.Name = "CreatorName"
-CreatorName.Parent = title
-CreatorName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CreatorName.BackgroundTransparency = 1.000
-CreatorName.BorderSizePixel = 0
-CreatorName.Position = UDim2.new(0.0206718352, 0, 0, 0)
-CreatorName.Size = UDim2.new(0, 63, 0, 22)
-CreatorName.Font = Enum.Font.GothamBold
-CreatorName.Text = "Kierf--"
-CreatorName.TextColor3 = Color3.fromRGB(255, 255, 255)
-CreatorName.TextSize = 20.000
-
-GuiName.Name = "GuiName"
-GuiName.Parent = title
-GuiName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GuiName.BackgroundTransparency = 1.000
-GuiName.BorderSizePixel = 0
-GuiName.Position = UDim2.new(0.0465116277, 0, 0.400000006, 0)
-GuiName.Size = UDim2.new(0, 53, 0, 24)
-GuiName.Font = Enum.Font.GothamBold
-GuiName.Text = "Shitty Hub"
-GuiName.TextColor3 = Color3.fromRGB(85, 255, 255)
-GuiName.TextSize = 14.000
-
-rainbow.Name = "rainbow"
-rainbow.Parent = title
-rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-rainbow.Position = UDim2.new(0.00300002773, 0, 1, 0)
-rainbow.Size = UDim2.new(0, 385, 0, 2)
-
-scriptlist.Name = "scriptlist"
-scriptlist.Parent = main
-scriptlist.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-scriptlist.BorderColor3 = Color3.fromRGB(255, 255, 255)
-scriptlist.Position = UDim2.new(0.371134013, 0, 0.159999996, 0)
-scriptlist.Size = UDim2.new(0, 219, 0, 264)
-scriptlist.Visible = false
-
-admin.Name = "admin"
-admin.Parent = scriptlist
-admin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-admin.BackgroundTransparency = 0.600
-admin.BorderColor3 = Color3.fromRGB(255, 255, 255)
-admin.Position = UDim2.new(0.0365296789, 0, 0.0261416472, 0)
-admin.Size = UDim2.new(0, 185, 0, 20)
-admin.Font = Enum.Font.GothamBold
-admin.Text = "Admin (Infinite Yield)"
-admin.TextColor3 = Color3.fromRGB(255, 255, 255)
-admin.TextSize = 15.000
-admin.MouseButton1Down:connect(function()
+AdminScript.Name = "AdminScript"
+AdminScript.Parent = ScriptFrame
+AdminScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+AdminScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AdminScript.BorderSizePixel = 3
+AdminScript.Position = UDim2.new(0.0650001019, 0, 0.0218887255, 0)
+AdminScript.Size = UDim2.new(0, 189, 0, 25)
+AdminScript.Font = Enum.Font.GothamBlack
+AdminScript.Text = "Admin (Infinite Yield)"
+AdminScript.TextColor3 = Color3.fromRGB(255, 0, 0)
+AdminScript.TextSize = 16.000
+AdminScript.MouseButton1Down:Connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
-ragdoll.Name = "ragdoll"
-ragdoll.Parent = scriptlist
-ragdoll.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-ragdoll.BackgroundTransparency = 0.600
-ragdoll.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ragdoll.Position = UDim2.new(0.0410000011, 0, 0.0703623146, 0)
-ragdoll.Size = UDim2.new(0, 185, 0, 20)
-ragdoll.Font = Enum.Font.GothamBold
-ragdoll.Text = "Ragdoll (Vynixius)"
-ragdoll.TextColor3 = Color3.fromRGB(255, 255, 255)
-ragdoll.TextSize = 15.000
-ragdoll.MouseButton1Down:connect(function()
+RagdollScript.Name = "RagdollScript"
+RagdollScript.Parent = ScriptFrame
+RagdollScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+RagdollScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RagdollScript.BorderSizePixel = 3
+RagdollScript.Position = UDim2.new(0.0650001019, 0, 0.0757348835, 0)
+RagdollScript.Size = UDim2.new(0, 189, 0, 25)
+RagdollScript.Font = Enum.Font.GothamBlack
+RagdollScript.Text = "Ragdoll (Vynixius)"
+RagdollScript.TextColor3 = Color3.fromRGB(255, 0, 0)
+RagdollScript.TextSize = 16.000
+RagdollScript.MouseButton1Down:Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine"))()
 end)
 
-freeanim.Name = "freeanim"
-freeanim.Parent = scriptlist
-freeanim.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-freeanim.BackgroundTransparency = 0.600
-freeanim.BorderColor3 = Color3.fromRGB(255, 255, 255)
-freeanim.Position = UDim2.new(0.0410000011, 0, 0.113318831, 0)
-freeanim.Size = UDim2.new(0, 185, 0, 20)
-freeanim.Font = Enum.Font.GothamBold
-freeanim.Text = "Free Animation"
-freeanim.TextColor3 = Color3.fromRGB(255, 255, 255)
-freeanim.TextSize = 15.000
-freeanim.MouseButton1Down:connect(function()
+AnimScript.Name = "AnimScript"
+AnimScript.Parent = ScriptFrame
+AnimScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+AnimScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AnimScript.BorderSizePixel = 3
+AnimScript.Position = UDim2.new(0.0650001019, 0, 0.129581034, 0)
+AnimScript.Size = UDim2.new(0, 189, 0, 25)
+AnimScript.Font = Enum.Font.GothamBlack
+AnimScript.Text = "Animation Changer"
+AnimScript.TextColor3 = Color3.fromRGB(255, 0, 0)
+AnimScript.TextSize = 16.000
+AnimScript.MouseButton1Down:Connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AyoYouSus/idek/9cff37024afdcf95a3d5fee862bfe7812e37afc2/AnimChanger'))()
 end)
 
-freeemote.Name = "freeemote"
-freeemote.Parent = scriptlist
-freeemote.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-freeemote.BackgroundTransparency = 0.600
-freeemote.BorderColor3 = Color3.fromRGB(255, 255, 255)
-freeemote.Position = UDim2.new(0.0364337899, 0, 0.15437682, 0)
-freeemote.Size = UDim2.new(0, 185, 0, 20)
-freeemote.Font = Enum.Font.GothamBold
-freeemote.Text = "Free Emote"
-freeemote.TextColor3 = Color3.fromRGB(255, 255, 255)
-freeemote.TextSize = 15.000
-freeemote.MouseButton1Down:connect(function()
+EmoteScript.Name = "EmoteScript"
+EmoteScript.Parent = ScriptFrame
+EmoteScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+EmoteScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EmoteScript.BorderSizePixel = 3
+EmoteScript.Position = UDim2.new(0.0650001019, 0, 0.183427185, 0)
+EmoteScript.Size = UDim2.new(0, 189, 0, 25)
+EmoteScript.Font = Enum.Font.GothamBlack
+EmoteScript.Text = "Emotes Gui"
+EmoteScript.TextColor3 = Color3.fromRGB(255, 0, 0)
+EmoteScript.TextSize = 16.000
+EmoteScript.MouseButton1Down:Connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/DjsEQMxQ"))()
 end)
 
-dahood.Name = "dahood"
-dahood.Parent = scriptlist
-dahood.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-dahood.BackgroundTransparency = 0.600
-dahood.BorderColor3 = Color3.fromRGB(255, 255, 255)
-dahood.Position = UDim2.new(0.0410000011, 0, 0.200835675, 0)
-dahood.Size = UDim2.new(0, 185, 0, 20)
-dahood.Font = Enum.Font.GothamBold
-dahood.Text = "Da Hood (Trust Boy)"
-dahood.TextColor3 = Color3.fromRGB(255, 255, 255)
-dahood.TextSize = 15.000
-dahood.MouseButton1Down:connect(function()
-loadstring(game:HttpGet('https://pastebin.com/raw/XXAWmifh'))()
+ScriptButton.Name = "ScriptButton"
+ScriptButton.Parent = MainFrame
+ScriptButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ScriptButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton.BorderSizePixel = 3
+ScriptButton.Position = UDim2.new(0.042857144, 0, 0.123076923, 0)
+ScriptButton.Size = UDim2.new(0, 75, 0, 25)
+ScriptButton.Font = Enum.Font.GothamBlack
+ScriptButton.Text = "Script"
+ScriptButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+ScriptButton.TextSize = 18.000
+ScriptButton.MouseButton1Down:Connect(function()
+ScriptFrame.Visible = true
+TrollFrame.Visible = false
 end)
 
-credits.Name = "credits"
-credits.Parent = main
-credits.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-credits.BorderColor3 = Color3.fromRGB(255, 255, 255)
-credits.Position = UDim2.new(0.370999992, 0, 0.159999996, 0)
-credits.Size = UDim2.new(0, 219, 0, 264)
-credits.Visible = false
+DestroyButton.Name = "DestroyButton"
+DestroyButton.Parent = MainFrame
+DestroyButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+DestroyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DestroyButton.BorderSizePixel = 3
+DestroyButton.Position = UDim2.new(0.042857144, 0, 0.338461548, 0)
+DestroyButton.Size = UDim2.new(0, 75, 0, 25)
+DestroyButton.Font = Enum.Font.GothamBlack
+DestroyButton.Text = "Destroy"
+DestroyButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+DestroyButton.TextSize = 18.000
+DestroyButton.MouseButton1Down:Connect(function()
+TopFrame.Visible = false
+TopFrame.Active = false
+end)
 
-names.Name = "names"
-names.Parent = credits
-names.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-names.BorderColor3 = Color3.fromRGB(255, 255, 255)
-names.Position = UDim2.new(0.0639269426, 0, 0.071969755, 0)
-names.Size = UDim2.new(0, 190, 0, 80)
+TrollButton.Name = "TrollButton"
+TrollButton.Parent = MainFrame
+TrollButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+TrollButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TrollButton.BorderSizePixel = 3
+TrollButton.Position = UDim2.new(0.042857144, 0, 0.230769232, 0)
+TrollButton.Size = UDim2.new(0, 75, 0, 25)
+TrollButton.Font = Enum.Font.GothamBlack
+TrollButton.Text = ";))"
+TrollButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TrollButton.TextSize = 18.000
+TrollButton.MouseButton1Down:Connect(function()
+TrollFrame.Visible = true
+ScriptFrame.Visible = false
+end)
 
-uicreator.Name = "uicreator"
-uicreator.Parent = names
-uicreator.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-uicreator.BorderColor3 = Color3.fromRGB(255, 255, 255)
-uicreator.Position = UDim2.new(0.0631578937, 0, 0.137500003, 0)
-uicreator.Size = UDim2.new(0, 166, 0, 19)
+TrollFrame.Name = "TrollFrame"
+TrollFrame.Parent = MainFrame
+TrollFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TrollFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TrollFrame.BorderSizePixel = 3
+TrollFrame.Position = UDim2.new(0.308571517, 0, 0.0769230798, 0)
+TrollFrame.Size = UDim2.new(0, 235, 0, 275)
+TrollFrame.Visible = false
+
+uno.Name = "uno"
+uno.Parent = TrollFrame
+uno.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uno.BackgroundTransparency = 1.000
+uno.BorderSizePixel = 0
+uno.Position = UDim2.new(0.0978723392, 0, 0.043636363, 0)
+uno.Size = UDim2.new(0, 200, 0, 25)
+uno.Font = Enum.Font.GothamBlack
+uno.Text = "THERE'S NOTHING HERE"
+uno.TextColor3 = Color3.fromRGB(255, 0, 0)
+uno.TextSize = 14.000
+uno.TextStrokeTransparency = 0.000
+
+dos.Name = "dos"
+dos.Parent = TrollFrame
+dos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dos.BackgroundTransparency = 1.000
+dos.BorderSizePixel = 0
+dos.Position = UDim2.new(0.0978723392, 0, 0.145454541, 0)
+dos.Size = UDim2.new(0, 200, 0, 25)
+dos.Font = Enum.Font.GothamBlack
+dos.Text = "GO BACK TO SCRIPT TAB"
+dos.TextColor3 = Color3.fromRGB(255, 0, 0)
+dos.TextSize = 14.000
+dos.TextStrokeTransparency = 0.000
+
+tres.Name = "tres"
+tres.Parent = TrollFrame
+tres.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tres.BackgroundTransparency = 1.000
+tres.BorderSizePixel = 0
+tres.Position = UDim2.new(0.0978723392, 0, 0.236363634, 0)
+tres.Size = UDim2.new(0, 200, 0, 25)
+tres.Font = Enum.Font.GothamBlack
+tres.Text = "YOU NEWB AND GHEI!"
+tres.TextColor3 = Color3.fromRGB(255, 0, 0)
+tres.TextSize = 14.000
+tres.TextStrokeTransparency = 0.000
+
+rainbow.Name = "rainbow"
+rainbow.Parent = TopFrame
+rainbow.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+rainbow.BorderSizePixel = 0
+rainbow.Position = UDim2.new(0, 0, 0.914285183, 0)
+rainbow.Size = UDim2.new(0, 350, 0, 3)
 
 name.Name = "name"
-name.Parent = uicreator
+name.Parent = TopFrame
 name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 name.BackgroundTransparency = 1.000
-name.BorderColor3 = Color3.fromRGB(27, 42, 53)
 name.BorderSizePixel = 0
-name.Position = UDim2.new(0.680722892, 0, 0, 0)
-name.Size = UDim2.new(0, 53, 0, 19)
-name.Font = Enum.Font.GothamBold
-name.Text = "Kierf--"
-name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.Position = UDim2.new(0.0171428565, 0, 0, 0)
+name.Size = UDim2.new(0, 43, 0, 19)
+name.Font = Enum.Font.GothamBlack
+name.Text = "IDEK"
+name.TextColor3 = Color3.fromRGB(255, 0, 0)
 name.TextSize = 14.000
 
-namee.Name = "namee"
-namee.Parent = uicreator
-namee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-namee.BackgroundTransparency = 1.000
-namee.BorderColor3 = Color3.fromRGB(27, 42, 53)
-namee.BorderSizePixel = 0
-namee.Position = UDim2.new(0.0662650615, 0, 0, 0)
-namee.Size = UDim2.new(0, 53, 0, 19)
-namee.Font = Enum.Font.GothamBold
-namee.Text = "Custom UI"
-namee.TextColor3 = Color3.fromRGB(255, 255, 255)
-namee.TextSize = 14.000
-
-scripting.Name = "scripting"
-scripting.Parent = names
-scripting.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-scripting.BorderColor3 = Color3.fromRGB(255, 255, 255)
-scripting.Position = UDim2.new(0.0631578937, 0, 0.512499988, 0)
-scripting.Size = UDim2.new(0, 166, 0, 19)
-
-name_2.Name = "name"
-name_2.Parent = scripting
-name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-name_2.BackgroundTransparency = 1.000
-name_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-name_2.BorderSizePixel = 0
-name_2.Position = UDim2.new(0.680722892, 0, 0, 0)
-name_2.Size = UDim2.new(0, 53, 0, 19)
-name_2.Font = Enum.Font.GothamBold
-name_2.Text = "Kierf--"
-name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-name_2.TextSize = 14.000
-
-namee_2.Name = "namee"
-namee_2.Parent = scripting
-namee_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-namee_2.BackgroundTransparency = 1.000
-namee_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-namee_2.BorderSizePixel = 0
-namee_2.Position = UDim2.new(0.0662650615, 0, 0, 0)
-namee_2.Size = UDim2.new(0, 53, 0, 19)
-namee_2.Font = Enum.Font.GothamBold
-namee_2.Text = "Scripting"
-namee_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-namee_2.TextSize = 14.000
-
-dc.Name = "dc"
-dc.Parent = credits
-dc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-dc.BorderColor3 = Color3.fromRGB(255, 255, 255)
-dc.Position = UDim2.new(0.0639269426, 0, 0.431818247, 0)
-dc.Size = UDim2.new(0, 190, 0, 80)
-
-dctitle.Name = "dctitle"
-dctitle.Parent = dc
-dctitle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-dctitle.BorderColor3 = Color3.fromRGB(255, 255, 255)
-dctitle.Position = UDim2.new(0.0631578937, 0, 0.137500003, 0)
-dctitle.Size = UDim2.new(0, 166, 0, 19)
-
-dctitletext.Name = "dctitletext"
-dctitletext.Parent = dctitle
-dctitletext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dctitletext.BackgroundTransparency = 1.000
-dctitletext.BorderColor3 = Color3.fromRGB(27, 42, 53)
-dctitletext.BorderSizePixel = 0
-dctitletext.Position = UDim2.new(0.343373507, 0, 0, 0)
-dctitletext.Size = UDim2.new(0, 53, 0, 19)
-dctitletext.Font = Enum.Font.GothamBold
-dctitletext.Text = "Discord"
-dctitletext.TextColor3 = Color3.fromRGB(255, 255, 255)
-dctitletext.TextSize = 14.000
-
-dcname.Name = "dcname"
-dcname.Parent = dc
-dcname.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-dcname.BorderColor3 = Color3.fromRGB(255, 255, 255)
-dcname.Position = UDim2.new(0.0631578937, 0, 0.512499988, 0)
-dcname.Size = UDim2.new(0, 166, 0, 19)
-
-dcnametext.Name = "dcnametext"
-dcnametext.Parent = dcname
-dcnametext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dcnametext.BackgroundTransparency = 1.000
-dcnametext.BorderColor3 = Color3.fromRGB(27, 42, 53)
-dcnametext.BorderSizePixel = 0
-dcnametext.Position = UDim2.new(0.343373507, 0, 0, 0)
-dcnametext.Size = UDim2.new(0, 53, 0, 19)
-dcnametext.Font = Enum.Font.GothamBold
-dcnametext.Text = "Kierf--#3585"
-dcnametext.TextColor3 = Color3.fromRGB(255, 255, 255)
-dcnametext.TextSize = 14.000
+hub.Name = "hub"
+hub.Parent = TopFrame
+hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hub.BackgroundTransparency = 1.000
+hub.BorderSizePixel = 0
+hub.Position = UDim2.new(0.0171428565, 0, 0.371428579, 0)
+hub.Size = UDim2.new(0, 43, 0, 18)
+hub.Font = Enum.Font.GothamBlack
+hub.Text = "HUB"
+hub.TextColor3 = Color3.fromRGB(255, 0, 0)
+hub.TextSize = 14.000
 
 close.Name = "close"
-close.Parent = main
-close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.Parent = TopFrame
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
 close.BorderSizePixel = 0
-close.Position = UDim2.new(0.894329906, 0, 0.00869565178, 0)
-close.Size = UDim2.new(0, 39, 0, 34)
-close.Font = Enum.Font.GothamBold
-close.Text = "X"
-close.TextColor3 = Color3.fromRGB(0, 0, 0)
-close.TextSize = 25.000
-close.MouseButton1Down:connect(function()
-main.Visible = false
-openmain.Visible = true
+close.Position = UDim2.new(0.894285738, 0, 0.0571428612, 0)
+close.Rotation = 90.000
+close.Size = UDim2.new(0, 30, 0, 30)
+close.Selected = true
+close.Image = "http://www.roblox.com/asset/?id=145360532"
+close.MouseButton1Down:Connect(function()
+ScriptFrame.Visible = false
+TrollFrame.Visible = false
+DestroyButton.Visible = false
+ScriptButton.Visible = false
+TrollButton.Visible = false
+wait(.4)
+MainFrame:TweenSize(UDim2.new(0, 350,0, 0))
+wait(1.2)
+open.Visible = true
+close.Visible = false
 end)
-
-openmain.Name = "openmain"
-openmain.Parent = ScreenGui
-openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-openmain.BackgroundTransparency = 1.000
-openmain.Position = UDim2.new(0.00882352982, 0, 0.471140951, 0)
-openmain.Size = UDim2.new(0, 65, 0, 20)
-openmain.Active = true
-openmain.Draggable = true
 
 open.Name = "open"
-open.Parent = openmain
-open.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-open.BorderColor3 = Color3.fromRGB(0, 0, 0)
-open.Size = UDim2.new(0, 65, 0, 19)
-open.Font = Enum.Font.GothamBold
-open.Text = "Open"
-open.TextColor3 = Color3.fromRGB(0, 0, 0)
-open.TextSize = 14.000
-open.MouseButton1Down:connect(function()
-openmain.Visible = false
-main.Visible = true
+open.Parent = TopFrame
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open.BackgroundTransparency = 1.000
+open.BorderSizePixel = 0
+open.Position = UDim2.new(0.894285738, 0, 0.0571428612, 0)
+open.Rotation = 180.000
+open.Size = UDim2.new(0, 30, 0, 30)
+open.Visible = false
+open.Selected = true
+open.Image = "http://www.roblox.com/asset/?id=145360532"
+open.MouseButton1Down:Connect(function()
+MainFrame:TweenSize(UDim2.new(0, 350,0, 325))
+wait(1.2)
+ScriptFrame.Visible = true
+TrollFrame.Visible = false
+DestroyButton.Visible = true
+ScriptButton.Visible = true
+TrollButton.Visible = true
+wait(1.2)
+close.Visible = true
+open.Visible = false
 end)
+
+
+-- Scripts:
+
+local function MRVMBD_fake_script() -- rainbow.Script 
+	local script = Instance.new('Script', rainbow)
+
+	while true do
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.2,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.3,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.4,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.5,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.6,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.7,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.8,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0.9,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.9,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.8,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.7,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.6,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.5,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.4,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.3,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.2,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.1,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.2)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.3)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.4)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.5)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.6)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.7)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.8)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,0.9)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,1,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.9,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.8,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.7,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.6,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.5,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.4,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.3,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.2,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0.1,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.1,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.2,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.3,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.4,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.5,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.6,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.7,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.8,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(0.9,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,1)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.9)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.8)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.7)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.6)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.5)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.4)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.3)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.2)
+		wait(0.08)
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0.1)
+		wait(0.08)
+	end
+end
+coroutine.wrap(MRVMBD_fake_script)()
