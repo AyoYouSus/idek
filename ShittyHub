@@ -1,414 +1,1473 @@
 --Kieee.#1674
+
+
 local ScreenGui = Instance.new("ScreenGui")
-local TopFrame = Instance.new("Frame")
+
+
+local TopFrame = Instance.new("ImageLabel")
+
+
 local MainFrame = Instance.new("Frame")
-local ScriptFrame = Instance.new("ScrollingFrame")
-local AdminScript = Instance.new("TextButton")
-local RagdollScript = Instance.new("TextButton")
-local AnimScript = Instance.new("TextButton")
-local EmoteScript = Instance.new("TextButton")
+
+
+local InfoButton = Instance.new("TextButton")
+
+
+local InfoLabel = Instance.new("TextLabel")
+
+
+local InfoFrame = Instance.new("Frame")
+
+
+local AFrame = Instance.new("ScrollingFrame")
+
+
+local OldSchool = Instance.new("TextButton")
+
+
+local Kieee1 = Instance.new("TextButton")
+
+
+local Kieee2 = Instance.new("TextButton")
+
+
+local Kieee3 = Instance.new("TextButton")
+
+
+local Kieee4 = Instance.new("TextButton")
+
+
+local Luke1 = Instance.new("TextButton")
+
+
 local ScriptButton = Instance.new("TextButton")
-local DestroyButton = Instance.new("TextButton")
-local TrollButton = Instance.new("TextButton")
-local TrollFrame = Instance.new("Frame")
+
+
+local ScriptButton_2 = Instance.new("TextLabel")
+
+
+local ScriptFrame = Instance.new("Frame")
+
+
+local IFrame = Instance.new("Frame")
+
+
 local uno = Instance.new("TextLabel")
+
+
 local dos = Instance.new("TextLabel")
+
+
 local tres = Instance.new("TextLabel")
-local rainbow = Instance.new("Frame")
-local name = Instance.new("TextLabel")
-local hub = Instance.new("TextLabel")
-local close = Instance.new("ImageButton")
-local open = Instance.new("ImageButton")
+
+
+local AnimButton = Instance.new("TextButton")
+
+
+local AnimLabel = Instance.new("TextLabel")
+
+
+local AnimFrame = Instance.new("Frame")
+
+
+local SFrame = Instance.new("ScrollingFrame")
+
+
+local Admin = Instance.new("TextButton")
+
+
+local Ragdoll = Instance.new("TextButton")
+
+
+local Emote = Instance.new("TextButton")
+
+
+local DestroyButton = Instance.new("TextButton")
+
+
+local AnimLabel_2 = Instance.new("TextLabel")
+
+
+local AnimFrame_2 = Instance.new("Frame")
+
+
+local COButton = Instance.new("ImageButton")
+
+
+local Animate = game.Players.LocalPlayer.Character.Animate
+
+
 
 ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
 
 TopFrame.Name = "TopFrame"
+
+
 TopFrame.Parent = ScreenGui
+
+
 TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TopFrame.BorderSizePixel = 0
-TopFrame.Position = UDim2.new(0.724021971, 0, 0.486381769, 0)
-TopFrame.Size = UDim2.new(0, 350, 0, 40)
+
+
+TopFrame.BackgroundTransparency = 1.000
+
+
+TopFrame.Position = UDim2.new(0.374688089, 0, 0.31236887, 0)
+
+
+TopFrame.Size = UDim2.new(0, 341, 0, 49)
+
+
+TopFrame.Image = "rbxassetid://3570695787"
+
+
+TopFrame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+
+TopFrame.ScaleType = Enum.ScaleType.Slice
+
+
+TopFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+
+
+TopFrame.SliceScale = 0.120
+
+
 TopFrame.Active = true
+
+
 TopFrame.Draggable = true
 
+
+
 MainFrame.Name = "MainFrame"
+
+
 MainFrame.Parent = TopFrame
-MainFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+MainFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+
+
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0, 0, 1, 0)
-MainFrame.Size = UDim2.new(0, 350, 0, 325)
 
-ScriptFrame.Name = "ScriptFrame"
-ScriptFrame.Parent = MainFrame
-ScriptFrame.Active = true
-ScriptFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-ScriptFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptFrame.BorderSizePixel = 3
-ScriptFrame.Position = UDim2.new(0.308571428, 0, 0.0769230798, 0)
-ScriptFrame.Size = UDim2.new(0, 235, 0, 275)
 
-AdminScript.Name = "AdminScript"
-AdminScript.Parent = ScriptFrame
-AdminScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-AdminScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AdminScript.BorderSizePixel = 3
-AdminScript.Position = UDim2.new(0.0650001019, 0, 0.0218887255, 0)
-AdminScript.Size = UDim2.new(0, 189, 0, 25)
-AdminScript.Font = Enum.Font.GothamBlack
-AdminScript.Text = "Admin (Infinite Yield)"
-AdminScript.TextColor3 = Color3.fromRGB(255, 0, 0)
-AdminScript.TextSize = 16.000
-AdminScript.MouseButton1Down:Connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+MainFrame.Position = UDim2.new(0, 0, 0.785623074, 0)
+
+
+MainFrame.Size = UDim2.new(0, 341, 0, 329)
+
+
+
+InfoButton.Name = "InfoButton"
+
+
+InfoButton.Parent = MainFrame
+
+
+InfoButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+InfoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+InfoButton.BorderSizePixel = 3
+
+
+InfoButton.Position = UDim2.new(0.046000015, 0, 0.0630000606, 0)
+
+
+InfoButton.Size = UDim2.new(0, 85, 0, 25)
+
+
+InfoButton.Font = Enum.Font.SourceSans
+
+
+InfoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+InfoButton.TextSize = 14.000
+
+
+InfoButton.MouseEnter:Connect(function()
+
+
+	if InfoFrame.BackgroundColor3 == Color3.fromRGB(43, 43, 43) then
+
+
+		InfoFrame.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+
+
+	end
+
+
 end)
 
-RagdollScript.Name = "RagdollScript"
-RagdollScript.Parent = ScriptFrame
-RagdollScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-RagdollScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RagdollScript.BorderSizePixel = 3
-RagdollScript.Position = UDim2.new(0.0650001019, 0, 0.0757348835, 0)
-RagdollScript.Size = UDim2.new(0, 189, 0, 25)
-RagdollScript.Font = Enum.Font.GothamBlack
-RagdollScript.Text = "Ragdoll (Vynixius)"
-RagdollScript.TextColor3 = Color3.fromRGB(255, 0, 0)
-RagdollScript.TextSize = 16.000
-RagdollScript.MouseButton1Down:Connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine"))()
+
+
+InfoButton.MouseLeave:Connect(function()
+
+
+	InfoFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
 end)
 
-AnimScript.Name = "AnimScript"
-AnimScript.Parent = ScriptFrame
-AnimScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-AnimScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AnimScript.BorderSizePixel = 3
-AnimScript.Position = UDim2.new(0.0650001019, 0, 0.129581034, 0)
-AnimScript.Size = UDim2.new(0, 189, 0, 25)
-AnimScript.Font = Enum.Font.GothamBlack
-AnimScript.Text = "Animation Changer"
-AnimScript.TextColor3 = Color3.fromRGB(255, 0, 0)
-AnimScript.TextSize = 16.000
-AnimScript.MouseButton1Down:Connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/AyoYouSus/idek/9cff37024afdcf95a3d5fee862bfe7812e37afc2/AnimChanger'))()
+
+
+InfoButton.MouseButton1Down:Connect(function()
+
+
+	IFrame.Visible = true
+
+
+	AFrame.Visible = false
+
+
+	SFrame.Visible = false
+
+
 end)
 
-EmoteScript.Name = "EmoteScript"
-EmoteScript.Parent = ScriptFrame
-EmoteScript.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-EmoteScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EmoteScript.BorderSizePixel = 3
-EmoteScript.Position = UDim2.new(0.0650001019, 0, 0.183427185, 0)
-EmoteScript.Size = UDim2.new(0, 189, 0, 25)
-EmoteScript.Font = Enum.Font.GothamBlack
-EmoteScript.Text = "Emotes Gui"
-EmoteScript.TextColor3 = Color3.fromRGB(255, 0, 0)
-EmoteScript.TextSize = 16.000
-EmoteScript.MouseButton1Down:Connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/DjsEQMxQ"))()
+
+
+InfoLabel.Name = "InfoLabel"
+
+
+InfoLabel.Parent = InfoButton
+
+
+InfoLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+InfoLabel.BorderSizePixel = 0
+
+
+InfoLabel.Size = UDim2.new(0, 85, 0, 25)
+
+
+InfoLabel.Font = Enum.Font.GothamBlack
+
+
+InfoLabel.Text = "Info"
+
+
+InfoLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+InfoLabel.TextSize = 20.000
+
+
+InfoLabel.TextWrapped = true
+
+
+
+InfoFrame.Name = "InfoFrame"
+
+
+InfoFrame.Parent = InfoLabel
+
+
+InfoFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+InfoFrame.BorderSizePixel = 0
+
+
+InfoFrame.Position = UDim2.new(0.0500000007, 0, 0.239999995, 0)
+
+
+InfoFrame.Size = UDim2.new(0, 2, 0, 13)
+
+
+
+AFrame.Name = "AFrame"
+
+
+AFrame.Parent = MainFrame
+
+
+AFrame.Active = true
+
+
+AFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+
+
+AFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+AFrame.BorderSizePixel = 3
+
+
+AFrame.Position = UDim2.new(0.390029311, 0, 0.0607902743, 0)
+
+
+AFrame.Size = UDim2.new(0, 190, 0, 289)
+
+
+AFrame.Visible = false
+
+
+
+OldSchool.Name = "OldSchool"
+
+
+OldSchool.Parent = AFrame
+
+
+OldSchool.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+OldSchool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+OldSchool.BorderSizePixel = 3
+
+
+OldSchool.Position = UDim2.new(0.109999999, 0, 0.0240000002, 0)
+
+
+OldSchool.Size = UDim2.new(0, 136, 0, 21)
+
+
+OldSchool.Font = Enum.Font.GothamBlack
+
+
+OldSchool.Text = "Old School"
+
+
+OldSchool.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+OldSchool.TextSize = 14.000
+
+
+OldSchool.MouseButton1Down:connect(function()
+
+
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
+
+
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=5319831086"
+
+
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=5319847204"
+
+
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=5319844329"
+
+
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
+
+
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
+
+
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
+
+
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+
 end)
+
+
+
+Kieee1.Name = "Kieee1"
+
+
+Kieee1.Parent = AFrame
+
+
+Kieee1.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Kieee1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee1.BorderSizePixel = 3
+
+
+Kieee1.Position = UDim2.new(0.109999999, 0, 0.0759999976, 0)
+
+
+Kieee1.Size = UDim2.new(0, 136, 0, 21)
+
+
+Kieee1.Font = Enum.Font.GothamBlack
+
+
+Kieee1.Text = "Kie's Fav (1)"
+
+
+Kieee1.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee1.TextSize = 14.000
+
+
+Kieee1.MouseButton1Down:connect(function()
+
+
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+
+
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+
+
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+
+
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+
+
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+
+
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+
+
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+
+
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+
+end)
+
+
+
+Kieee2.Name = "Kieee2"
+
+
+Kieee2.Parent = AFrame
+
+
+Kieee2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Kieee2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee2.BorderSizePixel = 3
+
+
+Kieee2.Position = UDim2.new(0.109999999, 0, 0.129999995, 0)
+
+
+Kieee2.Size = UDim2.new(0, 136, 0, 21)
+
+
+Kieee2.Font = Enum.Font.GothamBlack
+
+
+Kieee2.Text = "Kie's Fav (2)"
+
+
+Kieee2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee2.TextSize = 14.000
+
+
+Kieee2.MouseButton1Down:connect(function()
+
+
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498" --(Put IdleAnim1 Anim ID)
+
+
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736" --(Put IdleAnim2 Anim ID)
+
+
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032" --(Put Walk Anim ID)
+
+
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682" --(Put Run Anim ID)
+
+
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878" --(Put Jump Anim ID)
+
+
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889" --(Put Climb Anim ID)
+
+
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606" --(Put Fall Anim ID)
+
+
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+
+end)
+
+
+
+Kieee3.Name = "Kieee3"
+
+
+Kieee3.Parent = AFrame
+
+
+Kieee3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Kieee3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee3.BorderSizePixel = 3
+
+
+Kieee3.Position = UDim2.new(0.109999999, 0, 0.183191478, 0)
+
+
+Kieee3.Size = UDim2.new(0, 136, 0, 21)
+
+
+Kieee3.Font = Enum.Font.GothamBlack
+
+
+Kieee3.Text = "Kie's Fav (3)"
+
+
+Kieee3.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee3.TextSize = 14.000
+
+
+Kieee3.MouseButton1Down:connect(function()
+
+
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498" --(Put IdleAnim1 Anim ID)
+
+
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736" --(Put IdleAnim2 Anim ID)
+
+
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766" --(Put Walk Anim ID)
+
+
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852" --(Put Run Anim ID)
+
+
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878" --(Put Jump Anim ID)
+
+
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889" --(Put Climb Anim ID)
+
+
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606" --(Put Fall Anim ID)
+
+
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+
+end)
+
+
+
+
+Kieee4.Name = "Kieee4"
+
+
+Kieee4.Parent = AFrame
+
+
+Kieee4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Kieee4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee4.BorderSizePixel = 3
+
+
+Kieee4.Position = UDim2.new(0.109999999, 0, 0.236382961, 0)
+
+
+Kieee4.Size = UDim2.new(0, 136, 0, 21)
+
+
+Kieee4.Font = Enum.Font.GothamBlack
+
+
+Kieee4.Text = "Kie's Fav (4)"
+
+
+Kieee4.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Kieee4.TextSize = 14.000
+
+
+Kieee4.MouseButton1Down:connect(function()
+
+
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498" --(Put IdleAnim1 Anim ID)
+
+
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736" --(Put IdleAnim2 Anim ID)
+
+
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930" --(Put Walk Anim ID)
+
+
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077" --(Put Run Anim ID)
+
+
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352" --(Put Jump Anim ID)
+
+
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889" --(Put Climb Anim ID)
+
+
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606" --(Put Fall Anim ID)
+
+
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+
+end)
+
+
+
+Luke1.Name = "Luke1"
+
+
+Luke1.Parent = AFrame
+
+
+Luke1.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Luke1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Luke1.BorderSizePixel = 3
+
+
+Luke1.Position = UDim2.new(0.109999999, 0, 0.289574444, 0)
+
+
+Luke1.Size = UDim2.new(0, 136, 0, 21)
+
+
+Luke1.Font = Enum.Font.GothamBlack
+
+
+Luke1.Text = "Luke's Fav (1)"
+
+
+Luke1.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Luke1.TextSize = 14.000
+
+
+Luke1.MouseButton1Down:connect(function()
+
+
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=4417977954" --(Put IdleAnim1 Anim ID)
+
+
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=4417978624" --(Put IdleAnim2 Anim ID)
+
+
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=3303162967" --(Put Walk Anim ID)
+
+
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=3236836670" --(Put Run Anim ID)
+
+
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878" --(Put Jump Anim ID)
+
+
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889" --(Put Climb Anim ID)
+
+
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151" --(Put Fall Anim ID)
+
+
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
+
+
+end)
+
+
 
 ScriptButton.Name = "ScriptButton"
+
+
 ScriptButton.Parent = MainFrame
-ScriptButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+
+
+ScriptButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
 ScriptButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
 ScriptButton.BorderSizePixel = 3
-ScriptButton.Position = UDim2.new(0.042857144, 0, 0.123076923, 0)
-ScriptButton.Size = UDim2.new(0, 75, 0, 25)
-ScriptButton.Font = Enum.Font.GothamBlack
-ScriptButton.Text = "Script"
-ScriptButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-ScriptButton.TextSize = 18.000
+
+
+ScriptButton.Position = UDim2.new(0.0460000001, 0, 0.167999998, 0)
+
+
+ScriptButton.Size = UDim2.new(0, 85, 0, 25)
+
+
+ScriptButton.Font = Enum.Font.SourceSans
+
+
+ScriptButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+ScriptButton.TextSize = 14.000
+
+
+ScriptButton.MouseEnter:Connect(function()
+
+
+	if ScriptFrame.BackgroundColor3 == Color3.fromRGB(43, 43, 43) then
+
+
+		ScriptFrame.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+
+
+	end
+
+
+end)
+
+
+
+ScriptButton.MouseLeave:Connect(function()
+
+
+	ScriptFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+end)
+
+
+
 ScriptButton.MouseButton1Down:Connect(function()
-ScriptFrame.Visible = true
-TrollFrame.Visible = false
+
+
+	IFrame.Visible = false
+
+
+	AFrame.Visible = false
+
+
+	SFrame.Visible = true
+
+
 end)
 
-DestroyButton.Name = "DestroyButton"
-DestroyButton.Parent = MainFrame
-DestroyButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-DestroyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DestroyButton.BorderSizePixel = 3
-DestroyButton.Position = UDim2.new(0.042857144, 0, 0.338461548, 0)
-DestroyButton.Size = UDim2.new(0, 75, 0, 25)
-DestroyButton.Font = Enum.Font.GothamBlack
-DestroyButton.Text = "Destroy"
-DestroyButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-DestroyButton.TextSize = 18.000
-DestroyButton.MouseButton1Down:Connect(function()
-TopFrame.Visible = false
-TopFrame.Active = false
-end)
 
-TrollButton.Name = "TrollButton"
-TrollButton.Parent = MainFrame
-TrollButton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-TrollButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TrollButton.BorderSizePixel = 3
-TrollButton.Position = UDim2.new(0.042857144, 0, 0.230769232, 0)
-TrollButton.Size = UDim2.new(0, 75, 0, 25)
-TrollButton.Font = Enum.Font.GothamBlack
-TrollButton.Text = ";))"
-TrollButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TrollButton.TextSize = 18.000
-TrollButton.MouseButton1Down:Connect(function()
-TrollFrame.Visible = true
-ScriptFrame.Visible = false
-end)
 
-TrollFrame.Name = "TrollFrame"
-TrollFrame.Parent = MainFrame
-TrollFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TrollFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TrollFrame.BorderSizePixel = 3
-TrollFrame.Position = UDim2.new(0.308571517, 0, 0.0769230798, 0)
-TrollFrame.Size = UDim2.new(0, 235, 0, 275)
-TrollFrame.Visible = false
+
+ScriptButton_2.Name = "ScriptLabel"
+
+
+ScriptButton_2.Parent = ScriptButton
+
+
+ScriptButton_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+ScriptButton_2.BorderSizePixel = 0
+
+
+ScriptButton_2.Selectable = true
+
+
+ScriptButton_2.Size = UDim2.new(0, 85, 0, 25)
+
+
+ScriptButton_2.Font = Enum.Font.GothamBlack
+
+
+ScriptButton_2.Text = "Script"
+
+
+ScriptButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+ScriptButton_2.TextSize = 13.000
+
+
+ScriptButton_2.TextWrapped = true
+
+
+
+ScriptFrame.Name = "ScriptFrame"
+
+
+ScriptFrame.Parent = ScriptButton_2
+
+
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+ScriptFrame.BorderSizePixel = 0
+
+
+ScriptFrame.Position = UDim2.new(0.0500000007, 0, 0.239999995, 0)
+
+
+ScriptFrame.Size = UDim2.new(0, 2, 0, 13)
+
+
+
+IFrame.Name = "IFrame"
+
+
+IFrame.Parent = MainFrame
+
+
+IFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+
+
+IFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+IFrame.BorderSizePixel = 3
+
+
+IFrame.Position = UDim2.new(0.390029311, 0, 0.0607902743, 0)
+
+
+IFrame.Size = UDim2.new(0, 190, 0, 289)
+
+
 
 uno.Name = "uno"
-uno.Parent = TrollFrame
-uno.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-uno.BackgroundTransparency = 1.000
-uno.BorderSizePixel = 0
-uno.Position = UDim2.new(0.0978723392, 0, 0.043636363, 0)
-uno.Size = UDim2.new(0, 200, 0, 25)
+
+
+uno.Parent = IFrame
+
+
+uno.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+
+
+uno.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+uno.BorderSizePixel = 3
+
+
+uno.Position = UDim2.new(0.042105265, 0, 0.0207612459, 0)
+
+
+uno.Size = UDim2.new(0, 174, 0, 35)
+
+
 uno.Font = Enum.Font.GothamBlack
-uno.Text = "THERE'S NOTHING HERE"
-uno.TextColor3 = Color3.fromRGB(255, 0, 0)
-uno.TextSize = 14.000
-uno.TextStrokeTransparency = 0.000
+
+
+uno.Text = "Heyyy! There's literally nothing"
+
+
+uno.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+uno.TextSize = 10.000
+
+
 
 dos.Name = "dos"
-dos.Parent = TrollFrame
-dos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dos.BackgroundTransparency = 1.000
-dos.BorderSizePixel = 0
-dos.Position = UDim2.new(0.0978723392, 0, 0.145454541, 0)
-dos.Size = UDim2.new(0, 200, 0, 25)
+
+
+dos.Parent = IFrame
+
+
+dos.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+
+
+dos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+dos.BorderSizePixel = 3
+
+
+dos.Position = UDim2.new(0.042105265, 0, 0.141868517, 0)
+
+
+dos.Size = UDim2.new(0, 174, 0, 35)
+
+
 dos.Font = Enum.Font.GothamBlack
-dos.Text = "GO BACK TO SCRIPT TAB"
-dos.TextColor3 = Color3.fromRGB(255, 0, 0)
-dos.TextSize = 14.000
-dos.TextStrokeTransparency = 0.000
+
+
+dos.Text = "to put here so go to"
+
+
+dos.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+dos.TextSize = 15.000
+
+
+dos.TextWrapped = true
+
+
 
 tres.Name = "tres"
-tres.Parent = TrollFrame
-tres.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tres.BackgroundTransparency = 1.000
-tres.BorderSizePixel = 0
-tres.Position = UDim2.new(0.0978723392, 0, 0.236363634, 0)
-tres.Size = UDim2.new(0, 200, 0, 25)
+
+
+tres.Parent = IFrame
+
+
+tres.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+
+
+tres.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+tres.BorderSizePixel = 3
+
+
+tres.Position = UDim2.new(0.042105265, 0, 0.262975782, 0)
+
+
+tres.Size = UDim2.new(0, 174, 0, 35)
+
+
 tres.Font = Enum.Font.GothamBlack
-tres.Text = "YOU NEWB AND GHEI!"
-tres.TextColor3 = Color3.fromRGB(255, 0, 0)
-tres.TextSize = 14.000
-tres.TextStrokeTransparency = 0.000
-
-rainbow.Name = "rainbow"
-rainbow.Parent = TopFrame
-rainbow.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
-rainbow.BorderSizePixel = 0
-rainbow.Position = UDim2.new(0, 0, 0.914285183, 0)
-rainbow.Size = UDim2.new(0, 350, 0, 3)
-
-name.Name = "name"
-name.Parent = TopFrame
-name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-name.BackgroundTransparency = 1.000
-name.BorderSizePixel = 0
-name.Position = UDim2.new(0.0171428565, 0, 0, 0)
-name.Size = UDim2.new(0, 43, 0, 19)
-name.Font = Enum.Font.GothamBlack
-name.Text = "IDEK"
-name.TextColor3 = Color3.fromRGB(255, 0, 0)
-name.TextSize = 14.000
-
-hub.Name = "hub"
-hub.Parent = TopFrame
-hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hub.BackgroundTransparency = 1.000
-hub.BorderSizePixel = 0
-hub.Position = UDim2.new(0.0171428565, 0, 0.371428579, 0)
-hub.Size = UDim2.new(0, 43, 0, 18)
-hub.Font = Enum.Font.GothamBlack
-hub.Text = "HUB"
-hub.TextColor3 = Color3.fromRGB(255, 0, 0)
-hub.TextSize = 14.000
-
-close.Name = "close"
-close.Parent = TopFrame
-close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-close.BackgroundTransparency = 1.000
-close.BorderSizePixel = 0
-close.Position = UDim2.new(0.894285738, 0, 0.0571428612, 0)
-close.Rotation = 90.000
-close.Size = UDim2.new(0, 30, 0, 30)
-close.Selected = true
-close.Image = "http://www.roblox.com/asset/?id=145360532"
-close.MouseButton1Down:Connect(function()
-ScriptFrame.Visible = false
-TrollFrame.Visible = false
-DestroyButton.Visible = false
-ScriptButton.Visible = false
-TrollButton.Visible = false
-wait(.4)
-MainFrame:TweenSize(UDim2.new(0, 350,0, 0))
-wait(1.2)
-open.Visible = true
-close.Visible = false
-end)
-
-open.Name = "open"
-open.Parent = TopFrame
-open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-open.BackgroundTransparency = 1.000
-open.BorderSizePixel = 0
-open.Position = UDim2.new(0.894285738, 0, 0.0571428612, 0)
-open.Rotation = 180.000
-open.Size = UDim2.new(0, 30, 0, 30)
-open.Visible = false
-open.Selected = true
-open.Image = "http://www.roblox.com/asset/?id=145360532"
-open.MouseButton1Down:Connect(function()
-MainFrame:TweenSize(UDim2.new(0, 350,0, 325))
-wait(1.2)
-ScriptFrame.Visible = true
-TrollFrame.Visible = false
-DestroyButton.Visible = true
-ScriptButton.Visible = true
-TrollButton.Visible = true
-wait(1.2)
-close.Visible = true
-open.Visible = false
-end)
 
 
--- Scripts:
+tres.Text = "Script or Animation Script!"
 
-local function MRVMBD_fake_script() -- rainbow.Script 
-	local script = Instance.new('Script', rainbow)
 
-	while true do
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.2,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.3,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.4,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.5,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.6,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.7,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.8,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0.9,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.9,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.8,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.7,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.6,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.5,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.4,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.3,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.2,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.1,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.2)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.3)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.4)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.5)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.6)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.7)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.8)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,0.9)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,1,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.9,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.8,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.7,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.6,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.5,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.4,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.3,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.2,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0.1,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.1,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.2,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.3,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.4,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.5,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.6,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.7,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.8,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(0.9,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,1)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.9)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.8)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.7)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.6)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.5)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.4)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.3)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.2)
-		wait(0.08)
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0.1)
-		wait(0.08)
+tres.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+tres.TextSize = 12.000
+
+
+
+AnimButton.Name = "AnimButton"
+
+
+AnimButton.Parent = MainFrame
+
+
+AnimButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+AnimButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+AnimButton.BorderSizePixel = 3
+
+
+AnimButton.Position = UDim2.new(0.0460000001, 0, 0.274382979, 0)
+
+
+AnimButton.Size = UDim2.new(0, 85, 0, 25)
+
+
+AnimButton.Font = Enum.Font.SourceSans
+
+
+AnimButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+AnimButton.TextSize = 14.000
+
+
+AnimButton.MouseEnter:Connect(function()
+
+
+	if AnimFrame.BackgroundColor3 == Color3.fromRGB(43, 43, 43) then
+
+
+		AnimFrame.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+
+
 	end
-end
-coroutine.wrap(MRVMBD_fake_script)()
+
+
+end)
+
+
+
+AnimButton.MouseLeave:Connect(function()
+
+
+	AnimFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+end)
+
+
+
+AnimButton.MouseButton1Down:Connect(function()
+
+
+	IFrame.Visible = false
+
+
+	AFrame.Visible = true
+
+
+	SFrame.Visible = false
+
+
+end)
+
+
+
+AnimLabel.Name = "AnimLabel"
+
+
+AnimLabel.Parent = AnimButton
+
+
+AnimLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+AnimLabel.BorderSizePixel = 0
+
+
+AnimLabel.Selectable = true
+
+
+AnimLabel.Size = UDim2.new(0, 85, 0, 25)
+
+
+AnimLabel.Font = Enum.Font.GothamBlack
+
+
+AnimLabel.Text = "Animation"
+
+
+AnimLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+AnimLabel.TextSize = 13.000
+
+
+AnimLabel.TextWrapped = true
+
+
+
+AnimFrame.Name = "AnimFrame"
+
+
+AnimFrame.Parent = AnimLabel
+
+
+AnimFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+AnimFrame.BorderSizePixel = 0
+
+
+AnimFrame.Position = UDim2.new(0.0500000007, 0, 0.239999995, 0)
+
+
+AnimFrame.Size = UDim2.new(0, 2, 0, 13)
+
+
+
+SFrame.Name = "SFrame"
+
+
+SFrame.Parent = MainFrame
+
+
+SFrame.Active = true
+
+
+SFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+
+
+SFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+SFrame.BorderSizePixel = 3
+
+
+SFrame.Position = UDim2.new(0.390029311, 0, 0.0607902743, 0)
+
+
+SFrame.Size = UDim2.new(0, 190, 0, 289)
+
+
+SFrame.Visible = false
+
+
+
+Admin.Name = "Admin"
+
+
+Admin.Parent = SFrame
+
+
+Admin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Admin.BorderSizePixel = 3
+
+
+Admin.Position = UDim2.new(0.109999999, 0, 0.0240000002, 0)
+
+
+Admin.Size = UDim2.new(0, 136, 0, 21)
+
+
+Admin.Font = Enum.Font.GothamBlack
+
+
+Admin.Text = "Admin  CMDS (Infinite Yield)"
+
+
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Admin.TextWrapped = true
+
+
+Admin.MouseButton1Down:Connect(function()
+
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+
+end)
+
+
+
+Ragdoll.Name = "Ragdoll"
+
+
+Ragdoll.Parent = SFrame
+
+
+Ragdoll.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Ragdoll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Ragdoll.BorderSizePixel = 3
+
+
+Ragdoll.Position = UDim2.new(0.109999999, 0, 0.0759999976, 0)
+
+
+Ragdoll.Size = UDim2.new(0, 136, 0, 21)
+
+
+Ragdoll.Font = Enum.Font.GothamBlack
+
+
+Ragdoll.Text = "Ragdoll ENG (Vynixius)"
+
+
+Ragdoll.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Ragdoll.TextSize = 10.000
+
+
+Ragdoll.TextWrapped = true
+
+
+Ragdoll.MouseButton1Down:Connect(function()
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine"))()
+
+
+end)
+
+
+
+Emote.Name = "Emote"
+
+
+Emote.Parent = SFrame
+
+
+Emote.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+
+Emote.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Emote.BorderSizePixel = 3
+
+
+Emote.Position = UDim2.new(0.109999999, 0, 0.129999995, 0)
+
+
+Emote.Size = UDim2.new(0, 136, 0, 21)
+
+
+Emote.Font = Enum.Font.GothamBlack
+
+
+Emote.Text = "Emotes"
+
+
+Emote.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Emote.TextSize = 14.000
+
+
+Emote.MouseButton1Down:Connect(function()
+
+
+loadstring(game:HttpGet("https://pastebin.com/raw/DjsEQMxQ"))()
+
+
+end)
+
+
+
+DestroyButton.Name = "DestroyButton"
+
+
+DestroyButton.Parent = MainFrame
+
+
+DestroyButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+DestroyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+DestroyButton.BorderSizePixel = 3
+
+
+DestroyButton.Position = UDim2.new(0.0460000001, 0, 0.379999995, 0)
+
+
+DestroyButton.Size = UDim2.new(0, 85, 0, 25)
+
+
+DestroyButton.Font = Enum.Font.SourceSans
+
+
+DestroyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+DestroyButton.TextSize = 14.000
+
+
+DestroyButton.MouseButton1Down:Connect(function()
+
+
+	if AnimFrame_2.BackgroundColor3 == Color3.fromRGB(43, 43, 43) then
+
+
+		AnimFrame_2.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+
+
+	end
+
+
+end)
+
+
+
+DestroyButton.MouseLeave:Connect(function()
+
+
+	AnimFrame_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+end)
+
+
+
+DestroyButton.MouseButton1Down:Connect(function()
+
+
+	TopFrame.Visible = false
+
+
+end)
+
+
+
+AnimLabel_2.Name = "AnimLabel"
+
+
+AnimLabel_2.Parent = DestroyButton
+
+
+AnimLabel_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+
+
+AnimLabel_2.BorderSizePixel = 0
+
+
+AnimLabel_2.Position = UDim2.new(0, 0, 4.47034836e-08, 0)
+
+
+AnimLabel_2.Selectable = true
+
+
+AnimLabel_2.Size = UDim2.new(0, 85, 0, 25)
+
+
+AnimLabel_2.Font = Enum.Font.GothamBlack
+
+
+AnimLabel_2.Text = "Destroy"
+
+
+AnimLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+AnimLabel_2.TextSize = 13.000
+
+
+AnimLabel_2.TextWrapped = true
+
+
+
+AnimFrame_2.Name = "AnimFrame"
+
+
+AnimFrame_2.Parent = AnimLabel_2
+
+
+AnimFrame_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+AnimFrame_2.BorderSizePixel = 0
+
+
+AnimFrame_2.Position = UDim2.new(0.0500000007, 0, 0.239999995, 0)
+
+
+AnimFrame_2.Size = UDim2.new(0, 2, 0, 13)
+
+
+
+COButton.Name = "COButton"
+
+
+COButton.Parent = TopFrame
+
+
+COButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+COButton.BackgroundTransparency = 1.000
+
+
+COButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+
+
+COButton.BorderSizePixel = 0
+
+
+COButton.Position = UDim2.new(0.912, 0, 0.224999994, 0)
+
+
+COButton.Size = UDim2.new(0, 22, 0, 21)
+
+
+COButton.Image = "rbxassetid://6645077599"
+
+
+COButton.MouseButton1Down:Connect(function()
+
+
+	InfoButton.Visible = false
+
+
+	ScriptButton.Visible = false
+
+
+	AnimButton.Visible = false
+
+
+	DestroyButton.Visible = false
+
+
+	AFrame.Visible = false
+
+
+	IFrame.Visible = false
+
+
+	SFrame.Visible = false
+
+
+	wait(.3)
+
+
+	if COButton.Rotation == 0 then
+
+
+		wait(.5)
+
+
+		COButton.Rotation = 90
+
+
+		MainFrame:TweenSize(UDim2.new(0, 341,0, 11))
+
+
+		wait(1)
+
+
+		MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+
+	else
+
+
+		wait(.5)
+
+
+		COButton.Rotation = 0
+
+
+		MainFrame:TweenSize(UDim2.new(0, 341,0, 329))
+
+
+		MainFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+
+
+		wait(1.5)
+
+
+		InfoButton.Visible = true
+
+
+		ScriptButton.Visible = true
+
+
+		AnimButton.Visible = true
+
+
+		DestroyButton.Visible = true
+
+
+		AFrame.Visible = true
+
+
+		IFrame.Visible = true
+
+
+		SFrame.Visible = true
+
+
+	end
+
+
+end)
